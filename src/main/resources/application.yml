@@ -1,0 +1,26 @@
+spring:
+  # APPLICATION
+  application:
+    name: eureka-server
+    # ANSI IN LOGS
+  output:
+    ansi:
+      enabled: ALWAYS
+
+# SERVER
+server:
+  port: 8761
+
+# SERVICE DISCOVERY
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enableSelfPreservation: false
+
+# LOG LEVELS
+logging:
+  level:
+    com.netflix.eureka: ERROR
+    com.netflix.discovery: ERROR
