@@ -20,7 +20,7 @@ eureka:
     enableSelfPreservation: false
 
 # LOG LEVELS
-logging:
-  level:
-    com.netflix.eureka: ERROR
-    com.netflix.discovery: ERROR
+#logging:
+#  level:
+#    com.netflix.eureka: ERROR
+#    com.netflix.discovery: ERROR
