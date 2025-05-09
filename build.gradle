@@ -22,7 +22,20 @@ ext {
 }
 
 dependencies {
+	// DEVELOPER TOOLS
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+	// STARTERS
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// CLOUD
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+
+	// CACHE
+	implementation 'com.github.ben-manes.caffeine:caffeine:3.1.8'
+
+	// TEST
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
